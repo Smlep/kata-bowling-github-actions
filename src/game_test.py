@@ -42,3 +42,7 @@ class TestGame(unittest.TestCase):
     def test_perfect_game(self):
         self.roll_many(12, 10)
         self.assertEqual(300, self.game.score())
+
+
+if __name__ == "__main__":
+    unittest.main()

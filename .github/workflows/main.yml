@@ -1,0 +1,9 @@
+name: A workflow for the bowling game kata
+on: push
+jobs:
+  build:
+    name: Start tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: python3 game_test.py
